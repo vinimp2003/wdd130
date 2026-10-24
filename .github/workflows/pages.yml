@@ -15,8 +15,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Build site
+        run: |
+          mkdir site
+          cp -r wwr/. site/
+          cp -r Portal-Page site/portal
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: wwr
+          path: site
       - id: deployment
         uses: actions/deploy-pages@v4
