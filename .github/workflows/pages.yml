@@ -21,6 +21,7 @@ jobs:
           cp -r wwr/. site/
           cp -r Portal-Page site/portal
           cp -r flags site/flags
+          cp -r ice site/ice
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
