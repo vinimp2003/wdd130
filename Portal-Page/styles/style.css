@@ -165,6 +165,27 @@ section img {
     justify-self: center;
 }
 
+#ice-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    align-items: start;
+    padding-bottom: 20px;
+}
+
+#ice-list img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+#ice-list article a {
+    color: #00a67e;
+}
+
+#ice-list article a:hover {
+    color: #0b0f14;
+}
+
 footer {
     display: grid;
     grid-template-columns: auto 1fr;
